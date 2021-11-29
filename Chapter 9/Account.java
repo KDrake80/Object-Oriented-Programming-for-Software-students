@@ -9,14 +9,14 @@ public class Account {
 	private int id = 0;
 	private double balance = 0;
 	private double annualInterestRate = 0;
-	private Date dateCreated = new Date();
-	private double monthlyInterestRate;
+	private Date dateCreated;
 	
 	public Account() {
 	}
 	public Account(int newId, double newBalance){
 		id = newId;
 		balance = newBalance;
+		dateCreated = new Date();
 	}
 	public int getId() {
 		return id;
@@ -28,7 +28,7 @@ public class Account {
 		return balance;
 	}
 	public void setBalance(double newBalance) {
-		balance = (newBalance >= 0) ? newBalance : 0;
+		balance = newBalance;
 	}
 	public double getAnnualInterestRate() {
 		return annualInterestRate;
@@ -39,11 +39,13 @@ public class Account {
 	public Date getDate() {
 		return dateCreated;
 	}
-	public double getMonthlyInterestRate() {
-	  return monthlyInterestRate = annualInterestRate / 100 / 12; 
+	public double getMonthlyInterestRate() { 
+	double monthlyInterestRate = annualInterestRate / 100 / 12; 
+	return monthlyInterestRate;
 	}
+	
 	public double getMonthlyInterest() {
-		double monthlyInterest = balance * monthlyInterestRate;
+		double monthlyInterest = balance * getMonthlyInterestRate();
 		return monthlyInterest;
 	}
 	public double withdraw(double amount) {
