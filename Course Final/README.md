@@ -5,7 +5,7 @@ This program allows the user to buy and sell items to other people online.
 I want to write Programs for Websites and companies.
 ## How to Use
 Enter your name, Which will create an Account, follow the Instuctions On what to type in. You can add new items to your account, view your account and items, and browse other user's items.
-![Example of how to run](https://github.com/KDrake80/Object-Oriented-Programming-for-Software-students/blob/main/Course%20Final/GITHub%20ScreenShot.png)
+![This is an Image of the Program](https://github.com/KDrake80/Object-Oriented-Programming-for-Software-students/blob/main/Course%20Final/Git-Screenshot.png)
 ## Code Example
 These are an example of some of the methods in the program
 ```
